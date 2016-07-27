@@ -12,6 +12,7 @@
           <li><a href="#hola">Contactenos</a></li>
           <li><a href="#ubicanos">Ubicanos</a></li>
           <a class="waves-effect waves-light btn modal-trigger" href="#iniciar_sesion">Iniciar Sesion</a>
+          <a href="https://github.com/dolce/iziModal" class="trigger">Modal</a>
         </ul>
         <ul id="mobile" class="side-nav">
           <li><a href="#inicio">Inicio</a></li>
@@ -38,7 +39,7 @@
           </tr>
           <tr>
             <i class="material-icons" >vpn_key</i>
-            <input id="contra" type="password" placeholder="Contraseña" name="contrasena" class="validate" required>
+            <input id="contra" type="text" placeholder="Contraseña" name="contrasena" class="validate" required>
           </tr>
         </table><br>
         <button type="submit" name="sesion_vigilante" class="btn waves-effect purple darken-2" >Iniciar Sesión</button>
@@ -51,7 +52,7 @@
 <!-- Inicio de Slider -->
   <div class="slider fullscreen" id="inicio">
       <ul class="slides">
-        <!-- <li>
+        <li>
           <img src="imagenes/bolso.jpg">
           <div class="caption center-align">
             <h3 class="light grey-text text-lighten-3">Security Software</h3>
@@ -59,21 +60,21 @@
               Texto
             </p>
           </div>
-        </li> -->
+        </li>
         <li>
           <img src="imagenes/computer.jpg">
-          <div class="caption rigth-align">
-            <h3 class="light grey-text">Security Software</h3>
-            <!-- <h5 class="light grey-text text-lighten-3">Hola</h5> -->
+          <div class="caption left-align">
+            <h3 class="light grey-text text-lighten-3">Security Software</h3>
+            <h5 class="light grey-text text-lighten-3">Hola</h5>
           </div>
         </li>
-        <!-- <li>
+        <li>
           <img src="imagenes/monte.jpg">
           <div class="caption right-align">
             <h3 class="light grey-text text-lighten-3">Security Software</h3>
             <h5 class="light grey-text text-lighten-3">Proceso</h5>
           </div>
-        </li> -->
+        </li>
       </ul>
     </div>
 <!-- Fin de Slider-->

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-  <html>
+<html>
     <head>
       <title>Security Software</title>
       <meta charset="utf-8">
@@ -9,8 +8,8 @@
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
       <link rel="stylesheet" href="styles/estilos.css" charset="utf-8">
-
-    </head>
+      <?php include '../Controller/hola.php'; ?>
+   </head>
     <body>
       <?php
         include 'section.index.php';

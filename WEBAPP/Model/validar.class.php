@@ -23,13 +23,16 @@
     			}
     	  }
         if (self::$contador>0) {
-          // session_start();
-          // $_SESSION["nombre"]=$_POST["nombre"];
+          session_start();
+          $_SESSION["nombre"]=$_POST["nombre"];
           header("location: ../Views/inicio.php");
         }
         else {
-          header("location: ../Views/index.php");
-          echo '<script language="javascript">sweetAlert("Oops...", "Something went wrong!", "error"); window.location="../Views/index.php"</script>';
+          echo "Contraseña mal";
+
+          /*echo '<script type="text/javascript">
+                  sweetAlert("Oops...", "Something went wrong!", "error"); window.location="../Views/index.php";
+                </script>';*/
           #echo "<script>alert('Usted esta siendo redireccionado a la pagina principal') window.location='index.php'</script>";
 
             #echo '<script language="javascript">sweetAlert("Oops...", "Something went wrong!", "error");</script>';

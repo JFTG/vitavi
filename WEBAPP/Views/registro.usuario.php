@@ -7,7 +7,7 @@
 	<div class="registros">
 	<h5>Registro de Usuario</h5>
 	<form action="../Controller/registrousu.php" method="post">
-		<div>
+		<div class="row col s6">
 			<select name="seleccion" class="browser-default purple white-text" >
 				<option  disabled selected>Elija un Rol</option>
 				 <?php
@@ -60,4 +60,3 @@
 
 
 </section>
-<br><br><br><br><br>

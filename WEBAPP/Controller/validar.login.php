@@ -1,6 +1,8 @@
 <?php
 require_once("../Model/conexion.php");
 require_once("../Model/validar.class.php");
+include 'hola.php';
+
 
     if (isset($_POST["sesion_vigilante"])) {
     #  $name=htmlentities(addslashes($_POST["nombre"]));
@@ -11,10 +13,13 @@ require_once("../Model/validar.class.php");
         $name = str_replace("usu", "123456789", $usuario);
 
         try {
-              login::valida($name,$pass);
+          if (login::valida($name,$pass)==false) {
             
 
-            }
+          }
+
+        }
+#https://www.visualstudio.com/es-es/features/xamarin-vs
         catch (Exception $e) {
             echo $e->getMessage();
               if ($e->getCode()== "42S02") {

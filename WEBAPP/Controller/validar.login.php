@@ -14,10 +14,8 @@ include 'hola.php';
 
         try {
           if (login::valida($name,$pass)==false) {
-            
-
+            echo "ErrorException";
           }
-
         }
 #https://www.visualstudio.com/es-es/features/xamarin-vs
         catch (Exception $e) {

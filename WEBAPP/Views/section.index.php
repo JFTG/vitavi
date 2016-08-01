@@ -11,6 +11,7 @@
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#hola">Contactenos</a></li>
           <li><a href="#ubicanos">Ubicanos</a></li>
+          <li><a href="registro.usuario.php">Crear</a></li>
           <a class="waves-effect waves-light btn modal-trigger" href="#iniciar_sesion">Iniciar Sesion</a>
           <a href="https://github.com/dolce/iziModal" class="trigger">Modal</a>
         </ul>

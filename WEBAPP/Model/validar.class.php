@@ -23,8 +23,8 @@
     			}
     	  }
         if (self::$contador>0) {
-          session_start();
-          $_SESSION["nombre"]=$_POST["nombre"];
+          // session_start();
+          // $_SESSION["nombre"]=$_POST["nombre"];
           header("location: ../Views/inicio.php");
         }
         else {

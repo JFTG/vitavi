@@ -1,6 +1,6 @@
 <?php
 		include '../Controller/validar.inicio.class.php';
-		inicio::session();
+		//inicio::session();
 ?>
 <!DOCTYPE html>
  <html>

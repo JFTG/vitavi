@@ -24,7 +24,16 @@ switch ($accion) {
 			} catch (Exception $e){
 				echo $e;
 			}
-				
+	case 'Borrar':
+		$modu_cod= $_GET["modu_cod"];
+		try{
+		Gestion_modulo::Eliminar($modu_cod);
+       		 echo "Eliminó con exito";
+       		 echo "<a href='../Views/Regitro.rol.php'>Volver</a>";
+      	}catch (Exception $e){
+       		 	echo $e;
+       		 }
+     	break;			
 }
 header("location:../views/consulta.modulo.php");
 ?>

@@ -14,7 +14,7 @@ Class Gestion_modulo
 		self::$query->execute(array($modu_cod, $modu_nom));
 
 		Conexion::Cerrarbd();
-		self::return $result;
+		return self::$result;
 	}
 	function Consulta()
 	{
@@ -54,5 +54,15 @@ Class Gestion_modulo
 		
 		return self::$result;
 	}
+	public static function Eliminar($codigo_modu)
+	{
+		$pdo = Conexion::Abrirbd();
+		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		self::$sql= "DELETE  FROM modulo Where modu_cod = ?";
+		self::$query= $pdo->prepare(self::$sql);
+		self::$query->execute(array($codigo_modu));
+
+		Conexion::Cerrarbd();
+		}
 }
 ?>

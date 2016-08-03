@@ -4,7 +4,8 @@ require_once("../Model/conexion.php");
 require_once("../Model/permiso.class.php");
 
 
-$codigo =Gestion_permiso::Consultarporcodigos($_GET["codigo_permi"]);
+$codigo =Gestion_permiso::Consultarporcodigo($_GET["codigo_permi"]);
+
 
 ?>
 
@@ -29,7 +30,7 @@ $codigo =Gestion_permiso::Consultarporcodigos($_GET["codigo_permi"]);
 	<br>
 	<br>
 	<label>Modulo del permiso</label>
-	<input type="text" name="modulo_permi" value=" <?php echo $codigo["modu_permi"]; ?>"required/>
+	<input type="text" name="modulo_permi" value=" <?php echo $codigo["modulo_permi"]; ?>"required/>
 	<br>
 	<br>
 	<button value="Modificar" name="accion">Modificar</button>

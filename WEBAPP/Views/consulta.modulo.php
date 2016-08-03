@@ -35,7 +35,7 @@ $modu=Gestion_modulo::Consulta();
 							<td>".$consulta["modu_nom"]."</td>
 							<td>
 								<a href='modifico_modulo.php?codigo_mod=".$consulta["modu_cod"]."'>Modificar</a>
-								<a href='../Controller/modulo.controller.php?modu_cod=".$consulta["modu_cod"]."&action=Borrar' >Eliminar</a>
+								<a href='../Controller/modulo.controller.php?modu_cod=".$consulta["modu_cod"]."&accion=Borrar' >Eliminar</a>
 							</td>
 					</tr>";
 			}

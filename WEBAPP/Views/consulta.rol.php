@@ -48,7 +48,7 @@ $rol =Gestion_rol::Consultar();
 			}
 		?>
 	</tbody>
-	<a href="Regitro.rol.php">Crear rol</a>
+	<a href="registro.rol.php">Crear rol</a>
 </table>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?php
 require_once("../Model/conexion.php");
-require_once("../Views/Components/tipoproducto.class.php");
+require_once("../Model/tipoproducto.class.php");
 	$accion = $_REQUEST["accion"];
 
 	switch ($accion) {
@@ -42,6 +42,5 @@ require_once("../Views/Components/tipoproducto.class.php");
        		 }
      		break;
 	}
-	//header("Location: ../../Controller/gestion_tipoproducto.php");
-	header("Location: ../Views/Components/gestion_tipoproducto.php");
+	header("Location: ../Views/consulta.tipoproducto.php");
 ?>

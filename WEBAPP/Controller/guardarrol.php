@@ -11,7 +11,7 @@ switch ($action) {
 		try{
 			Gestion_rol::Guardar($codigo_rol, $nombre_rol, $desc_rol);
 			echo "Guardo con exito";
-			echo "<a href='../Views/Regitro.rol.php'>Volver</a>";
+			echo "<a href='../Views/registro.rol.php'>Volver</a>";
 
 		}catch(Exception $e){
 			echo $e;
@@ -38,7 +38,7 @@ switch ($action) {
     try {
        		 Gestion_rol::Eliminar($rol_cod);
        		 echo "Eliminó con exito";
-       		 echo "<a href='../Views/Regitro.rol.php'>Volver</a>";
+       		 echo "<a href='../Views/registro.rol.php'>Volver</a>";
       	}catch (Exception $e){
        		 	echo $e;
        		 }

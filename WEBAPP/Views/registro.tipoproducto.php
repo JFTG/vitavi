@@ -5,7 +5,7 @@
 </head>
 <body>
 	<h1>Guardar tipo de prducto</h1>
-	<form action="../../Controller/tipoproducto.controller.php" method="POST">
+	<form action="../Controller/tipoproducto.controller.php" method="POST">
 		<label>Codigo del tipo de producto</label>
 		<input type="text" name="txt_tipoprocod"/></br>
 		<label>Nombre del tipo de producto</label>

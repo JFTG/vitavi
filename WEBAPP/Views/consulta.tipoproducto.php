@@ -1,6 +1,6 @@
 <?php
-require_once("../../Model/conexion.php");
-require_once("tipoproducto.class.php");
+require_once("../Model/conexion.php");
+require_once("../Model/tipoproducto.class.php");
 $tipo_produ = Gestion_Tipoproducto::ConsultarTodo();
 ?>
 
@@ -49,8 +49,8 @@ $tipo_produ = Gestion_Tipoproducto::ConsultarTodo();
                     <td>".$row["tipopro_nombre"]."</td>
                     <td>".$row["tipopro_desc"]."</td>
                     <td>
-                    <a href='modi_tipoproducto.php?tipopro_cod=".$row["tipopro_cod"]."'>Modificar</a> -
-                    <a href='../../Controller/tipoproducto.controller.php?tipopro_cod=".$row["tipopro_cod"]."&accion=delete' >Eliminar</a></td>
+                    <a href='modifico_tipoproducto.php?tipopro_cod=".$row["tipopro_cod"]."'>Modificar</a> -
+                    <a href='../Controller/tipoproducto.controller.php?tipopro_cod=".$row["tipopro_cod"]."&accion=delete' >Eliminar</a></td>
                   </tr>";
             $item++;
           }

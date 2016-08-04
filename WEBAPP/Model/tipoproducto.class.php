@@ -25,6 +25,20 @@ class Gestion_Tipoproducto{
 		Conexion::Cerrarbd();
 		return $result;
 	}
+	function cargar_tipo(){
+		$pdo= Conexion::Abrirbd();
+		$pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+
+		$sql="SELECT * FROM tipo_producto";
+
+		$query=$pdo->prepare($sql);
+		$query->execute();
+		$result=$query->fetchALL(PDO::FETCH_BOTH);
+
+		Conexion::Cerrarbd();
+		return $result;
+
+	}
 	function Modificar($tipopro_cod, $tipopro_nombre, $tipopro_desc)
 	{
 		$pdo = Conexion::Abrirbd();

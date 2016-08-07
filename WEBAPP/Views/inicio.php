@@ -5,7 +5,7 @@
 <!DOCTYPE html>
  <html>
 	 <head>
-		 <title>Page Title</title>
+		 <title>Inicio</title>
 		 <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
 		 <link rel="stylesheet" type="text/css" href="styles/estilos.css">
@@ -14,7 +14,7 @@
 	 </head>
 
 		<?php
-		
+
 			inicio::pagina();
 			include 'section.inicio.php';
 		 ?>

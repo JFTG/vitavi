@@ -2,28 +2,9 @@
   margin: 0;
   padding: 0;
 }
-#section_index1{
-  background-color:#455A64;
-  width: 100%;
-  height: 100vh;
-}
-/*#popup_login{
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background-color: rgba(0,0,0,0.7);
-  z-index:100000000000000;
-}*/
 .modal{
   height: 55%;
   width: 35%;
-}
-
-#section_index2{
-  width: 100%;
-  height: 100vh;
-
-  font-family: Roboto Condensed, sans-serif;
 }
 
 
@@ -44,16 +25,21 @@
 
 }
 
-
-.navbar-fixed{
+#nav-index{
   opacity: 0.5;
- filter:  alpha(opacity=50);
+  filter:  alpha(opacity=50);
+}
+#nav-inicio{
+
+  background-color: #607D8B;
 }
 nav div ul li a:hover{
-  color: white;
+  color: green;
   background-color: red;
-
-
+}
+header nav ul li a:hover{
+  color: white;
+  background-color: #BDBDBD;
 }
 
 

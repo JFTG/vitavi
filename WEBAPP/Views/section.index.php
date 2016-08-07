@@ -1,6 +1,6 @@
-<section id="section_index1">
+<section>
 <!--Inicio de Nav-->
-  <div class="navbar-fixed">
+  <div class="navbar-fixed" id="nav-index">
     <nav>
       <div class="nav-wrapper black" >
         <a href="#!" class="brand-logo center"><img src="imagenes/logo_png.png" width="125" height="67" /></a>

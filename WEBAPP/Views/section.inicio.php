@@ -1,5 +1,5 @@
 <header>
-  <nav>
+  <nav class="z-depth-0" id="nav-inicio">
     <ul>
       <li><a href="inicio.php"><img src="imagenes/Logo_png.png" width="110" height="63" class="brand-logo" ></a></li>
       <li><a href="inicio.php">Inicio</a></li>

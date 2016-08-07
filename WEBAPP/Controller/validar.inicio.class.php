@@ -17,7 +17,7 @@
 
       switch ($pagin) {
         case 'producto':
-          include("guardar_producto.php");
+          include("registro.producto.php");
         break;
         case 'usuario':
           include("Registro.usuario.php");

@@ -4,7 +4,6 @@
     private static $verificar;
     private static $mostrar;
     private static $dato;
-    private static $contador=0;
 
     public static function valida($name,$pass){
       try {
@@ -21,18 +20,13 @@
 
 
         if (password_verify($pass,self::$dato["usu_pass"])) {
-          $existe=true;
-          echo "hola";
-        }
-        else {
-          $existe=false;
-          echo "hh";
-        }
-
-        // session_start();
-        // $_SESSION["nombre"]=$_POST["nombre"];
-        //header("location: ../Views/inicio.php");
-
+            session_start();
+            $_SESSION["nombre"]=$_POST["nombre"];
+            header("location: ../Views/inicio.php");
+          }
+          else {
+            echo "Error";
+          }
 
           /*echo '<script type="text/javascript">
                   sweetAlert("Oops...", "Something went wrong!", "error"); window.location="../Views/index.php";
@@ -46,8 +40,7 @@
       }
 
       catch (Exception $e) {
-          echo "Error: " . $e->getMessage() . " en la linea" . $e->getLine() . "<br>";
-          echo "El codigo del error es: " . $e->getCode();
+          echo "Error: " . $e->getMessage() . " en la linea: " . $e->getLine() . " , su codigo es: " . $e->getCode();
       }
     }
   }

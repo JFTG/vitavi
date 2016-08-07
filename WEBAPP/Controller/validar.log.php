@@ -1,6 +1,6 @@
 <?php
   require_once("../Model/conexion.php");
-  require_once("../Model/validar.class.php");
+  require_once("../Model/validar.log.class.php");
   include 'hola.php';
 
 
@@ -8,16 +8,15 @@
 
         $usuario= htmlentities(addslashes($_POST["nombre"]));
         $contrasena= htmlentities(addslashes($_POST["contrasena"]));
-        $pass = str_replace("cont", "123456789", $contrasena);
         $name = str_replace("usu", "123456789", $usuario);
+        $pass = str_replace("pas", "123456789", $contrasena);
 
           try {
-            echo $existe=login::valida($name,$pass);
+       login::valida($name,$pass);
+
+
           }
           catch (Exception $e) {
-              echo $e->getMessage();
-                if ($e->getCode()== "42S02") {
-                  echo "Error al nombrar tabla de la consulta";
-              }
-            }
+            echo "Error: " . $e->getMessage() . " en la linea: " . $e->getLine() . " , su codigo es: " . $e->getCode();
           }
+        }

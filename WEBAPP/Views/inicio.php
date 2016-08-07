@@ -14,7 +14,7 @@
 	 </head>
 
 		<?php
-			include 'nav.inicio.php';
+		
 			inicio::pagina();
 			include 'section.inicio.php';
 		 ?>

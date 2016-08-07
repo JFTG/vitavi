@@ -32,7 +32,7 @@
       <h5 class="center white-text">Ingresar al sistema</h5>
     </div>
     <div class="modal-content">
-      <form action="../Controller/validar.login.php" method="post">
+      <form action="../Controller/validar.log.php" method="post">
         <table>
           <tr>
             <i class="material-icons prefix ">account_circle</i>

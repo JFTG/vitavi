@@ -29,17 +29,9 @@
   opacity: 0.5;
   filter:  alpha(opacity=50);
 }
-#nav-inicio{
-
-  background-color: #607D8B;
-}
 nav div ul li a:hover{
   color: green;
   background-color: red;
-}
-header nav ul li a:hover{
-  color: white;
-  background-color: #BDBDBD;
 }
 
 

@@ -15,7 +15,7 @@
 			<?php echo @$_REQUEST["$mensaje"]; ?><br>
 
 			<button class="waves-effect waves-light btn red" ><a href="guardar_tipoproducto.php"></a>Guardar Tipo Producto</button>
-		    <button class="waves-effect waves-light btn orange" ><a href="guardar_marca.php"></a>Guardar Marca</button>
+		  <button class="waves-effect waves-light btn orange" ><a href="guardar_marca.php"></a>Guardar Marca</button>
 		</form>
 	</div>
 </section>

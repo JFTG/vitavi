@@ -12,7 +12,7 @@
         $name = str_replace("usu", "123456789", $usuario);
 
           try {
-            echo $existe=login::valida($name,$pass)
+            echo $existe=login::valida($name,$pass);
           }
           catch (Exception $e) {
               echo $e->getMessage();
@@ -21,4 +21,3 @@
               }
             }
           }
-?>

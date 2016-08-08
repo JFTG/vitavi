@@ -66,7 +66,7 @@ class Gestion_permiso{
 
 			self::$sql = "UPDATE permiso SET estado_permi=?,modulo_permi=?  WHERE permi_cod = ?";
 			self::$query= $pdo->prepare(self::$sql);
-			self::$query->execute(array($rol_cod, $modu_cod, $estado_permi, $modulo_permi));
+			self::$query->execute(array($rol_cod, $estado_permi, $modulo_permi, $modu_cod));
 			Conexion::Cerrarbd();
 		}
 

@@ -5,6 +5,8 @@ require_once("../Model/permiso.class.php");
 $rol=Gestion_usuario::cargar_rol();
 $modulo=Gestion_permiso::Cargar_modulo();
 ?>
+	<!-- Formulario: Guardar permiso -->
+
 <form action="../Controller/permiso.controller.php" method="post">
 	<label>Rol</label>
 	<select name="sele_rol">

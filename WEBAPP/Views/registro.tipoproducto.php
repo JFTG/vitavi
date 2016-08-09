@@ -13,4 +13,5 @@
 		?>
 	</form>
 	<a href="consulta.tipoproducto.php">Consultar todo</a>
+	
 

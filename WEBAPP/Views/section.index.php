@@ -40,7 +40,7 @@
           </tr>
           <tr>
             <i class="material-icons" >vpn_key</i>
-            <input id="contra" type="text" placeholder="Contraseña" name="contrasena" class="validate" required>
+            <input id="contra" type="password" placeholder="Contraseña" name="contrasena" class="validate" required>
           </tr>
         </table><br>
         <button type="submit" name="sesion_vigilante" class="btn waves-effect purple darken-2" >Iniciar Sesión</button>

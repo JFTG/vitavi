@@ -15,3 +15,5 @@
         <input type="text" name="txt_descrol" value=" <?php echo $codigo["rol_desc"]; ?>" required/>
       <button name="action" value="Update">Modificar</button>
   </form>
+  <a href="consulta.rol.php">Volver</a>
+  <a href="registro.rol.php">Crear rol</a>

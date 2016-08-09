@@ -12,4 +12,5 @@
 		<?php echo @$_REQUEST["$mensaje"];
 		?>
 	</form>
+	<a href="consulta.tipoproducto.php">Consultar todo</a>
 

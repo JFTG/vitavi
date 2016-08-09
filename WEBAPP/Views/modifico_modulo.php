@@ -21,4 +21,5 @@ $codigo =Gestion_modulo::Consultarporcodigo($_GET["codigo_mod"]);
 				<button name="accion" value="Modificar">Modificar</button>
 
 	</form>
-	<a href="consulta.modulo.php">Consultar</a>
+	<a href="consulta.modulo.php">Volver</a>
+	<a href="registro.modulo.php">Crear modulo</a>

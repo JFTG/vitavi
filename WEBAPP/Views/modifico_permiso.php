@@ -25,3 +25,6 @@ $codigo =Gestion_permiso::Consultarporcodigo($_GET["codigo_permi"]);
 			<input type="text" name="modulo_permi" value=" <?php echo $codigo["modulo_permi"]; ?>"required/>
 				<br>
 	<button value="Modificar" name="accion">Modificar</button>
+	</form>
+	<a href="consulta.permiso.php">Volver</a>
+	<a href="registro.permiso.php">Crear permiso</a>

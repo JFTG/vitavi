@@ -8,5 +8,5 @@
 	<label>Descripcion</label>
 		<input type="text" name="txt_descrol" required/>
 	<button value="Guardar" name="action">Guardar</button>
-	<a href="consulta.rol.php">Consultar</a>
 </form>
+	<a href="consulta.rol.php">Consultar todo</a>

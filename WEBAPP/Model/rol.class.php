@@ -62,6 +62,5 @@ class Gestion_rol{
 
 			Conexion::Cerrarbd();
 		}
-		
 	}
 ?>

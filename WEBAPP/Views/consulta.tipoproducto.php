@@ -26,7 +26,7 @@ $tipo_produ = Gestion_Tipoproducto::ConsultarTodo();
 </head>
 <body>
   <h1>Gestion de tipo de producto</h1>
-  <a href="guardar_tipoproducto.php">Nuevo tipo de producto</a>
+  <a href="registro.tipoproducto.php">Volver</a>
   <!--Aqui va a ir la tabla-->
 
     <table id="datatable">

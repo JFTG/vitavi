@@ -42,7 +42,7 @@ switch ($action) {
       	}catch (Exception $e){
        		 	echo $e;
        		 }
-     	break;		
+     	break;
 }
 header("location:../views/consulta.rol.php");
 ?>

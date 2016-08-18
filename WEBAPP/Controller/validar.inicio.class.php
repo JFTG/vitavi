@@ -1,12 +1,12 @@
 <?php
   class inicio{
 
-    // function session(){
-    //   session_start();
-    //   	if (!isset($_SESSION["nombre"])) {
-    //   		header("location: index.php");
-    //   	}
-    //   }
+     function session(){
+       session_start();
+     	if (!isset($_SESSION["nombre"])) {
+     		header("location: index.php");
+    	}
+     }
 
     function pagina(){
       if (isset($_GET["seccion"])) {

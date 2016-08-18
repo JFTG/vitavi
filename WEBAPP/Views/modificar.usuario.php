@@ -2,12 +2,13 @@
 	require_once("../Model/conexion.php");
 	require_once("../Model/usuario.class.php");
 	$codigo =Gestion_usuario::Consultarusuariocodigo($_GET["codigo_usuario"]);
+
 ?>
 
 
 	<h1>Modificar usuario</h1>
-	<form action="../Controller/registrousu.php" method="POST">
-	<label>Codigo: <?php echo $codigo["usu_cod"]; ?></label>
+	<form action="../Controller/registro.controller.php" method="POST">
+		<label>Codigo: <?php echo $codigo["usu_cod"]; ?></label>
 	<input type="hidden" name="codigo" value=" <?php echo $codigo["usu_cod"]; ?>"/>
 
 	<label>Documento</label>
@@ -18,16 +19,20 @@
 
 	<label>Apellido</label>
 	<input type="text" name="apellido" value=" <?php echo $codigo["usu_ape"]; ?>"required/>
-
+	<br>
+	<br>
 	<label>Email</label>
 	<input type="email" name="email" value=" <?php echo $codigo["usu_email"]; ?>"required/>
-
+	<br>
+	<br>
 	<label>Telefono</label>
 	<input type="text" name="telefono" value=" <?php echo $codigo["usu_tel"]; ?>"/>
-
+	<br>
+	<br>
 	<label>Nombre de Usuario</label>
 	<input type="text" name="nombredeusuario" value=" <?php echo $codigo["usu_nick"]; ?>"required/>
-
+	<br>
+	<br>
 	<label>Contraseña</label>
 	<input type="password" name="contrasena" value=" <?php echo $codigo["usu_pass"]; ?>"required/>
 

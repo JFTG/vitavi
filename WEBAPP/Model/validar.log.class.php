@@ -10,7 +10,7 @@
 
         $pdo=Conexion::Abrirbd();
 
-        self::$verificar="SELECT usu_nick,usu_pass FROM usuario WHERE usu_nick=:nick";
+        self::$verificar="SELECT * FROM usuario WHERE usu_nick=:nick";
 
         self::$mostrar=$pdo->prepare(self::$verificar);
         self::$mostrar->bindValue(":nick",$name);

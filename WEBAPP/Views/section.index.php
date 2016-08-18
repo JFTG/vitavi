@@ -12,8 +12,9 @@
           <li><a href="#hola">Contactenos</a></li>
           <li><a href="#ubicanos">Ubicanos</a></li>
           <li><a href="registro.usuario.php">Crear</a></li>
+          <li><a href="registro.rol.php"></a></li>
           <a class="waves-effect waves-light btn modal-trigger" href="#iniciar_sesion">Iniciar Sesion</a>
-          <a href="https://github.com/dolce/iziModal" class="trigger">Modal</a>
+
         </ul>
         <ul id="mobile" class="side-nav">
           <li><a href="#inicio">Inicio</a></li>
@@ -32,6 +33,7 @@
       <h5 class="center white-text">Ingresar al sistema</h5>
     </div>
     <div class="modal-content">
+
       <form action="../Controller/validar.log.php" method="post">
         <table>
           <tr>
@@ -40,11 +42,12 @@
           </tr>
           <tr>
             <i class="material-icons" >vpn_key</i>
-            <input id="contra" type="text" placeholder="Contraseña" name="contrasena" class="validate" required>
+            <input id="contra" type="password" placeholder="Contraseña" name="contrasena" class="validate" required>
           </tr>
         </table><br>
         <button type="submit" name="sesion_vigilante" class="btn waves-effect purple darken-2" >Iniciar Sesión</button>
       </form>
+
         <a href="#!" class="modal-action modal-close waves-effect waves-grey btn-flat right">Cancelar<i class="material-icons right">send</i></a>
     </div>
   </div>

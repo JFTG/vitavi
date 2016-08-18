@@ -51,6 +51,7 @@ class Gestion_rol{
 			$query= $pdo->prepare($sql);
 			$query->execute(array($rol_nombre, $desc_rol, $rol_cod));
 			Conexion::Cerrarbd();
+			
 		}
 		function Eliminar($codigo_rol)
 		{

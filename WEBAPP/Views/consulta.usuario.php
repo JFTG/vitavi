@@ -3,7 +3,7 @@ require_once("../Model/conexion.php");
 require_once("../Model/usuario.class.php");
 
 
-$usuario =Gestion_usuario::consultar_usuario();
+$usuario =Gestion_usuario::consultar_usuario();//se trae los usuarios registrados
 
 
 ?>
@@ -38,7 +38,7 @@ $usuario =Gestion_usuario::consultar_usuario();
 	</thead>
 	<tbody>
 		<?php
-			foreach ($usuario as $consulta) {
+			foreach ($usuario as $consulta) {//se pone los registros de los usuarios
 				echo "<tr>
 							<td>".$consulta["usu_docu"]."</td>
 							<td>".$consulta["usu_nom"]."</td>
@@ -49,7 +49,7 @@ $usuario =Gestion_usuario::consultar_usuario();
 
 
 							<td>
-								<a href='modifico_usuario.php?codigo_usuario=".$consulta["usu_cod"]."'>modificar</a>
+								<a href='modificar.usuario.php?codigo_usuario=".$consulta["usu_cod"]."'>modificar</a>
 							</td>
 					</tr>";
 			}

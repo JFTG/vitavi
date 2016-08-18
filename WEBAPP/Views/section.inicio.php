@@ -1,16 +1,47 @@
 <header>
-  <nav class="z-depth-0" id="nav-inicio">
-    <ul>
-      <li><a href="inicio.php"><img src="imagenes/Logo_png.png" width="110" height="63" class="brand-logo" ></a></li>
-      <li><a href="inicio.php">Inicio</a></li>
-      <li><a href="inicio.php?seccion=producto">Registro de usuarios y productos</a></li>
-      <li><a href="inicio.php?seccion=usuario">Registros Administrador</a></li>
-      <li><a href="inicio.php?seccion=cerrarsession">Cerrar sesion</a></li>
-    </ul>
-  </nav>
-</header>
+  <nav class="z-depth-0 orange lighten-2">
+      <a  href="#!" data-activates="mobile-demo" class="button-collapse">
+        <i class="right"><img src="images/icons/icon.png"/></i>
+      </a>
 
-<section>
+      <div class="top-nav nav-wrapper" >
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+          <ul class="side-nav fixed grey darken-4" id="mobile-demo"><br>
+              <li><p><?php echo $_SESSION["nombre"]; ?></p></li>
+              <li><a href="inicio.php" class="waves-effect active">Inicio</a></li>
+              <li><a href="inicio.php?seccion=administrador" class="waves-effect">Administrador</a></li>
+              <li><a href="inicio.php?seccion=usuario" >Registro de usuarios</a></li>
+              <li><a href="inicio.php?seccion=producto">Registro de producto</a></li>
+              <li><a href="inicio.php?" class="waves-effect">Consultas</a></li>
+                <li><a href="registro.rol.php">Registro rol</a></li>
+              <li><a href="inicio.php?seccion=cerrarsession" class="waves-effect">Cerrar sesion</a></li>
+          </ul>
+      </div>
+  </nav>
+
+</header>
+<div class="container">
+
+
+<div class="row">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/sicla.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<!-- <section>
 
     <h5>Facilidad de Uso</h5>
     <p>
@@ -33,4 +64,4 @@
         sentidos con todos los requerimientos que lo hacen adaptado a los nuevos tiempos.
       </p>
 
-</section>
+</section> -->

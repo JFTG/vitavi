@@ -17,7 +17,7 @@ $modulo=Gestion_permiso::Cargar_modulo();
 	?>
 	</select>
 	<br>
-	<label>Permiso</label>
+	<label>Modulo</label>
 	<select name="sele_modu">
 		<?php
 		foreach ($modulo as $modulos) {

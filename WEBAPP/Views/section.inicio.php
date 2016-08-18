@@ -9,11 +9,14 @@
           <ul class="side-nav fixed grey darken-4" id="mobile-demo"><br>
               <li><p><?php echo $_SESSION["nombre"]; ?></p></li>
               <li><a href="inicio.php" class="waves-effect active">Inicio</a></li>
-              <li><a href="inicio.php?seccion=administrador" class="waves-effect">Administrador</a></li>
-              <li><a href="inicio.php?seccion=usuario" >Registro de usuarios</a></li>
-              <li><a href="inicio.php?seccion=producto">Registro de producto</a></li>
-              <li><a href="inicio.php?" class="waves-effect">Consultas</a></li>
-                <li><a href="registro.rol.php">Registro rol</a></li>
+              <li><a href="inicio.php?seccion=rol">Registro rol</a></li>
+              <li><a href="inicio.php?seccion=usuario" >Registro usuario</a></li>
+              <li><a href="inicio.php?seccion=propietario">Registro Propietario</a></li>
+              <li><a href="inicio.php?seccion=c.propietario">Consultar propietario</a></li>
+              <li><a href="inicio.php?seccion=producto">Producto</a></li>
+              <li><a href="inicio.php?seccion=marca">Registro marca</a></li>
+              <li><a href="inicio.php?seccion=t_producto">Tipo de producto</a></li>
+
               <li><a href="inicio.php?seccion=cerrarsession" class="waves-effect">Cerrar sesion</a></li>
           </ul>
       </div>

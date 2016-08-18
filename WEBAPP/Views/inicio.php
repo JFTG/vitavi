@@ -17,6 +17,10 @@
 		<?php
 			include 'section.inicio.php';
 			inicio::pagina();
+			// include 'consultar.propietario.php';
+			// include 'registro.propietario.php';
+			
+
 		 ?>
 
      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

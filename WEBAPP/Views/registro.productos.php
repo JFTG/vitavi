@@ -5,6 +5,9 @@ require_once("../Model/marca.class.php");
 $tipopro= Gestion_Tipoproducto::cargar_tipo();
 $marca= Gestion_Marca::Cargar_marca();
 ?>
+<div class="container">
+
+
 <form action="../Controller/controller.producto.php" method="post">
 	<label>Codigo del producto</label>
 	<input type="text" name="txt_codprodu"/><br>
@@ -35,3 +38,4 @@ $marca= Gestion_Marca::Cargar_marca();
 
 	<button value="Guardar" name="action">Guardar</button>
 	<form>
+	</div>

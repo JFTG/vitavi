@@ -8,8 +8,8 @@ $marca=Gestion_Marca::Cargar_marca();
 ?>
 <div class="container">
 
-	<section id="losregistros">
-		<div class="registros">
+
+
 			<form action="../Controller/producto.controller.php" method="POST">
 				<h5>Registro de productos</h5><hr>
 
@@ -39,7 +39,7 @@ $marca=Gestion_Marca::Cargar_marca();
 				<?php echo "<a href='registro.marca.php' class='waves-effect waves-light btn green'>Registro de marca</a>"; ?>
 				<?php echo "<a href='registro.tipoproducto.php' class='waves-effect waves-light btn red'>Registro de tipo producto</a>"; ?>
 			</form>
-		</div>
-	</section>
+
+
 
 </div>

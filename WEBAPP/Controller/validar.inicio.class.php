@@ -22,6 +22,21 @@
         case 'usuario':
           include("Registro.usuario.php");
         break;
+        case 'propietario':
+          include 'registro.propietario.php';
+          break;
+        case 'rol':
+          include 'registro.rol.php';
+          break;
+        case 'c.propietario':
+          include 'consultar.propietario.php';
+          break;
+          case 'marca':
+            include 'registro.marca.php';
+            break;
+            case 't_producto':
+              include 'registro.tipoproducto.php';
+              break;
         case 'cerrarsession':
           include("../Controller/cerrarsession.php");
         break;

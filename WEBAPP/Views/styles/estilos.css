@@ -1,7 +1,4 @@
-*{
-  margin: 0;
-  padding: 0;
-}
+
 .modal{
   height: 55%;
   width: 35%;
@@ -12,6 +9,9 @@
 .slider .indicators .indicator-item.active{
 	background-color: grey;
 
+}
+.container{
+  margin-left: 22%;
 }
 ::-webkit-scrollbar {
   width: 5px;

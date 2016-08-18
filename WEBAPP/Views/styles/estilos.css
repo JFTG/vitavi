@@ -3,6 +3,9 @@
   height: 55%;
   width: 35%;
 }
+section{
+  height: 100vh;
+}
 .slider .indicators .indicator-item{
 	background-color: white;
 }

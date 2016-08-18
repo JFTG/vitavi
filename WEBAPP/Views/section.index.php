@@ -57,7 +57,7 @@
   <div class="slider fullscreen" id="inicio">
       <ul class="slides">
         <li>
-          <img src="imagenes/bolso.jpg">
+          <img src="images/bolso.jpg">
           <div class="caption center-align">
             <h3 class="light grey-text text-lighten-3">Security Software</h3>
             <p>
@@ -66,7 +66,7 @@
           </div>
         </li>
         <li>
-          <img src="imagenes/computer.jpg">
+          <img src="images/computer.jpg">
           <div class="caption left-align">
             <h3 class="light grey-text text-lighten-3">Security Software</h3>
             <h5 class="light grey-text text-lighten-3">Hola</h5>

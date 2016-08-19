@@ -17,7 +17,7 @@
         $dato=$mostrar->fetch(PDO::FETCH_ASSOC);
 
 
-        if (password_verify($pass,self::$dato["usu_pass"])) {
+        if (password_verify($pass,$dato["usu_pass"])) {
             session_start();
             $_SESSION["nombre"]=$_POST["nombre"];
             header("location: ../Views/inicio.php");

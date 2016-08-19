@@ -10,11 +10,11 @@
 
         $pdo=Conexion::Abrirbd();
 
-        self::$verificar="SELECT * FROM usuario WHERE usu_nick=:nick";
+        self::$verificar="SELECT * FROM usuario WHERE usu_nick=?";
 
         self::$mostrar=$pdo->prepare(self::$verificar);
-        self::$mostrar->bindValue(":nick",$name);
-        self::$mostrar->execute();
+
+        self::$mostrar->execute(array($name));
 
         self::$dato=self::$mostrar->fetch(PDO::FETCH_ASSOC);
 

@@ -1,22 +1,20 @@
 <?php
 
   class login{
-    private static $verificar;
-    private static $mostrar;
-    private static $dato;
+
 
     public static function valida($name,$pass){
       try {
 
         $pdo=Conexion::Abrirbd();
 
-        self::$verificar="SELECT * FROM usuario WHERE usu_nick=?";
+        $verificar="SELECT * FROM usuario WHERE usu_nick=?";
 
-        self::$mostrar=$pdo->prepare(self::$verificar);
+        $mostrar=$pdo->prepare($verificar);
 
-        self::$mostrar->execute(array($name));
+        $mostrar->execute(array($name));
 
-        self::$dato=self::$mostrar->fetch(PDO::FETCH_ASSOC);
+        $dato=$mostrar->fetch(PDO::FETCH_ASSOC);
 
 
         if (password_verify($pass,self::$dato["usu_pass"])) {
